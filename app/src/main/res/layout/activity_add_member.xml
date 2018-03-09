@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iss.nus.clubapplication.activity.AddMemberActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/firstNameLabel"
+            android:id="@+id/firstNameLabelId"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/firstName"
+            android:ems="10"
+            android:maxEms="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstNameLabelId"
+            android:hint="@string/firstNameLabel"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/secondNameLabel"
+            android:id="@+id/secondNameLabelId"
+            android:textSize="25dp"
+            android:layout_below="@+id/firstName"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:id="@+id/secondName"
+            android:ems="10"
+            android:maxEms="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondNameLabelId"
+            android:hint="@string/secondNameLabel"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surNameLabel"
+            android:id="@+id/surNameLabelId"
+            android:textSize="25dp"
+            android:layout_below="@+id/secondName"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:id="@+id/surName"
+            android:ems="10"
+            android:maxEms="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/surNameLabelId"
+            android:textSize="30dp"
+            android:hint="@string/surNameLabel"
+            />
+        <Button
+            android:text="@string/save"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/btnSave"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+           />
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
